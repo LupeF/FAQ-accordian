@@ -9,6 +9,19 @@ main{
     width: 75%;
     margin: auto;
     border-radius: 10px;
-    // z-index: 3;
-
+    #faq-container{
+        display: flex;
+        align-items: center;
+        svg{
+            margin-right: 1.5em;
+        }
+    }
+    #svg-flex{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    h2{
+        width: 80%;
+    }
 }

@@ -337,6 +337,13 @@ template {
   display: none;
 }
 
+* {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
 header {
   background-image: url("/assets/images/background-pattern-mobile.svg");
   height: 250px;
@@ -358,6 +365,21 @@ main {
   width: 75%;
   margin: auto;
   border-radius: 10px;
+}
+main #faq-container {
+  display: flex;
+  align-items: center;
+}
+main #faq-container svg {
+  margin-right: 1.5em;
+}
+main #svg-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main h2 {
+  width: 80%;
 }
 
 /*# sourceMappingURL=style.css.map */
