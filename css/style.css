@@ -381,5 +381,15 @@ main #svg-flex {
 main h2 {
   width: 80%;
 }
+main .svg {
+  display: none;
+}
+main .content {
+  display: none;
+}
+main .content-display {
+  display: block;
+  padding-bottom: 5px;
+}
 
 /*# sourceMappingURL=style.css.map */

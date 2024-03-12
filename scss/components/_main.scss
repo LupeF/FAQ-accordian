@@ -24,4 +24,14 @@ main{
     h2{
         width: 80%;
     }
+    .svg{
+        display: none;
+    }
+    .content{
+        display: none;
+    }
+    .content-display{
+        display: block;
+        padding-bottom: 5px;
+    }
 }
