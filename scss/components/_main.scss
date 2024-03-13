@@ -1,5 +1,11 @@
+body{
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // height: 100vh;
+}
 main{
-    padding: 2em;
+    padding: 1em;
     background-color: hsl(0, 0%, 100%);
     position: absolute;
     left: 0;
@@ -9,6 +15,7 @@ main{
     width: 75%;
     margin: auto;
     border-radius: 10px;
+    max-width: 500px;
     #faq-container{
         display: flex;
         align-items: center;
@@ -20,18 +27,32 @@ main{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        cursor: pointer;
+        h2{
+            width: 80%;
+            &:hover{
+                color:purple;
+            }
+        }
     }
-    h2{
-        width: 80%;
-    }
+    
     .svg{
         display: none;
     }
     .content{
         display: none;
+        p {
+            border-bottom: solid 1px lightgray;
+            padding-bottom: 1.5em;
+        }
+        
+    }
+    #content-four p {
+        border-bottom: none;
     }
     .content-display{
         display: block;
         padding-bottom: 5px;
+        color: hsl(292, 16%, 49%);
     }
 }

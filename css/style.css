@@ -344,9 +344,34 @@ template {
   font-style: normal;
 }
 
+@media (min-width: 320px) {
+  h2 {
+    font-size: 14px;
+  }
+}
+@media (min-width: 370px) {
+  h2 {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 24px;
+  }
+}
 header {
   background-image: url("/assets/images/background-pattern-mobile.svg");
-  height: 250px;
+  height: 150px;
+}
+@media (min-width: 370px) {
+  header {
+    height: 300px;
+  }
+}
+@media (min-width: 1000px) {
+  header {
+    background-image: url("/assets/images/background-pattern-desktop.svg");
+  }
 }
 
 body {
@@ -355,7 +380,7 @@ body {
 }
 
 main {
-  padding: 2em;
+  padding: 1em;
   background-color: white;
   position: absolute;
   left: 0;
@@ -365,6 +390,7 @@ main {
   width: 75%;
   margin: auto;
   border-radius: 10px;
+  max-width: 500px;
 }
 main #faq-container {
   display: flex;
@@ -377,9 +403,13 @@ main #svg-flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
 }
-main h2 {
+main #svg-flex h2 {
   width: 80%;
+}
+main #svg-flex h2:hover {
+  color: purple;
 }
 main .svg {
   display: none;
@@ -387,9 +417,17 @@ main .svg {
 main .content {
   display: none;
 }
+main .content p {
+  border-bottom: solid 1px lightgray;
+  padding-bottom: 1.5em;
+}
+main #content-four p {
+  border-bottom: none;
+}
 main .content-display {
   display: block;
   padding-bottom: 5px;
+  color: #8c6991;
 }
 
 /*# sourceMappingURL=style.css.map */
