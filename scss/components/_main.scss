@@ -34,8 +34,11 @@ main{
                 color:purple;
             }
         }
-    }
-    
+        svg:focus-visible{
+            outline: red;
+        }
+
+    }   
     .svg{
         display: none;
     }
