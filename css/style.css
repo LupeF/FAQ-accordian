@@ -411,9 +411,6 @@ main #svg-flex h2 {
 main #svg-flex h2:hover {
   color: purple;
 }
-main #svg-flex svg:focus-visible {
-  outline: red;
-}
 main .svg {
   display: none;
 }

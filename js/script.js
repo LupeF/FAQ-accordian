@@ -12,10 +12,18 @@ const paragraphTwo = document.getElementById('content-two');
 const paragraphThree = document.getElementById('content-three');
 const paragraphFour = document.getElementById('content-four');
 
+//* Section One
 plusOne.addEventListener('click', (e)=>{
     plusOne.style.display = 'none';
     paragraphOne.classList.toggle('content-display');
     minusOne.classList.toggle('content-display');
+});
+plusOne.addEventListener('keyup', (e)=>{
+    if(e.key === 'Enter'){
+        plusOne.style.display = 'none';
+        paragraphOne.classList.toggle('content-display');
+        minusOne.classList.toggle('content-display');
+    }
 });
 
 minusOne.addEventListener('click', (e)=>{
@@ -23,16 +31,38 @@ minusOne.addEventListener('click', (e)=>{
     paragraphOne.classList.toggle('content-display');
     minusOne.classList.toggle('content-display');
 });
-// Section Two
+minusOne.addEventListener('keyup', (e)=>{
+    if(e.key === 'Enter'){
+        plusOne.style.display = 'block';
+        paragraphOne.classList.toggle('content-display');
+        minusOne.classList.toggle('content-display');
+    }
+    
+});
+//* Section Two
 plusTwo.addEventListener('click', (e)=>{
     plusTwo.style.display = 'none';
     paragraphTwo.classList.toggle('content-display');
     minusTwo.classList.toggle('content-display');
 });
+plusTwo.addEventListener('keyup', (e)=>{
+    if(e.key === "Enter"){
+        plusTwo.style.display = 'none';
+        paragraphTwo.classList.toggle('content-display');
+        minusTwo.classList.toggle('content-display');
+    }
+});
 minusTwo.addEventListener('click', (e)=>{
     plusTwo.style.display = 'block';
     paragraphTwo.classList.toggle('content-display');
     minusTwo.classList.toggle('content-display');
+});
+minusTwo.addEventListener('keyup', (e)=>{
+    if(e.key === "Enter"){
+        plusTwo.style.display = 'block';
+        paragraphTwo.classList.toggle('content-display');
+        minusTwo.classList.toggle('content-display');
+    }
 });
 //Section Three
 plusThree.addEventListener('click', (e)=>{

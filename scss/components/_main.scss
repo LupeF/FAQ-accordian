@@ -1,9 +1,4 @@
-body{
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // height: 100vh;
-}
+
 main{
     padding: 1em;
     background-color: hsl(0, 0%, 100%);
@@ -34,9 +29,9 @@ main{
                 color:purple;
             }
         }
-        svg:focus-visible{
-            outline: red;
-        }
+        // svg:focus-visible{
+        //     outline: red;
+        // }
 
     }   
     .svg{
