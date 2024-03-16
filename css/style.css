@@ -360,9 +360,9 @@ template {
   }
 }
 header {
-  background-image: url("/assets/images/background-pattern-desktop.svg");
   height: 150px;
   width: 100%;
+  background-image: url("/assets/images/background-pattern-mobile.svg");
 }
 header img {
   width: 100%;
@@ -375,7 +375,7 @@ header img {
 }
 @media (min-width: 1000px) {
   header {
-    background-image: url("/assets/images/background-pattern-mobile.svg");
+    background-image: url("/assets/images/background-pattern-desktop.svg");
   }
 }
 
