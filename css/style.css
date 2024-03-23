@@ -359,24 +359,8 @@ template {
     font-size: 24px;
   }
 }
-header {
-  height: 150px;
+.background-image-desktop {
   width: 100%;
-  background-image: url("/assets/images/background-pattern-mobile.svg");
-}
-header img {
-  width: 100%;
-  height: 300px;
-}
-@media (min-width: 370px) {
-  header {
-    height: 300px;
-  }
-}
-@media (min-width: 1000px) {
-  header {
-    background-image: url("/assets/images/background-pattern-desktop.svg");
-  }
 }
 
 body {
