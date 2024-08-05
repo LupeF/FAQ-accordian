@@ -359,27 +359,50 @@ template {
     font-size: 24px;
   }
 }
-.background-image-desktop {
+.image-cont img {
   width: 100%;
+}
+@media (min-width: 375px) {
+  .image-cont img {
+    display: none;
+  }
+}
+
+.desktop-img-cont {
+  display: none;
+}
+@media (min-width: 375px) {
+  .desktop-img-cont {
+    display: block;
+    background-image: url("../assets/images/background-pattern-desktop.svg");
+    height: 220px;
+    width: 100%;
+  }
 }
 
 body {
   background-color: #f9f0ff;
   position: relative;
+  height: 50%;
 }
 
 main {
   padding: 1em;
   background-color: white;
-  position: absolute;
+  position: relative;
   left: 0;
   right: 0;
-  top: 50%;
+  top: -8em;
   border: solid 1px black;
   width: 75%;
   margin: auto;
   border-radius: 10px;
   max-width: 500px;
+}
+@media (min-width: 480px) {
+  main {
+    top: -5em;
+  }
 }
 main #faq-container {
   display: flex;
